@@ -1,0 +1,21 @@
+server:
+  port: 5000
+---
+environment: production
+myCustomVarTree:
+  authCode: xyz458
+  devName: Erik
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 4500
+---
+environment: testing
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 4000
